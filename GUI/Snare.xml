@@ -1,0 +1,45 @@
+<GUI w="775" h="335">
+
+	<!-- Variable fidelity kit, GUI for snare and all 7 mics -->
+ 
+	<!-- Background -->
+
+	<StaticImage x="0" y="0" w="773" h="333" image="snare_control_tab.png" transparent="0"  />
+	
+
+
+	<!-- Controls - Snare -->
+	
+	<StaticText x="246" y="84" w="80" h="20" text="VOLUME" color_text="#E3D481FF" transparent="1"  />
+	
+	<Knob param="101" x="272" y="96" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="259" y="170" w="50" h="18" text="Fat" color_text="#E3D481FF" transparent="1"   />
+	
+	<Knob param="112" x="269" y="190" image="Perc_knob.png" frames="128"  />
+
+
+	<!-- Controls - All -->
+	
+	<StaticText x="446" y="84" w="80" h="20" text="FIDELITY" color_text="#E3D481FF" transparent="1"  />
+	
+	<Knob param="110" x="472" y="96" image="Perc_stumpy.png" frames="81"  />
+
+	<StaticText x="459" y="170" w="50" h="18" text="Mix" color_text="#E3D481FF" transparent="1"   />
+
+
+	<OptionMenu    param="105"  x="455"  y="192"  w="60" h="18"  font_size="Small" alignment="center" color_text="#DFDF99FF" transparent="0"  >	
+		<OptionItem name="Glyn Johns"		    value="0.25" />
+		<OptionItem name="+ 1 mic"		    value="0.625" />
+		<OptionItem name="+ 3 mics"		    value="0.875" />	
+	</OptionMenu>
+
+	<StaticText x="459" y="226" w="50" h="18" text="Tuning" color_text="#E3D481FF" transparent="1"   />
+	
+	<Knob param="108" x="469" y="246" image="Perc_knob.png" frames="128"  />
+
+
+
+
+
+</GUI>                                                                                                                                       

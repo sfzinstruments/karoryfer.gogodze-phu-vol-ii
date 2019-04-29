@@ -1,0 +1,54 @@
+<GUI w="775" h="335">
+
+	<!-- Lower fi hi-hat drums -->
+ 
+	<!-- Background -->
+
+	<StaticImage x="0" y="0" w="773" h="333" image="hat_b_control_tab.png" transparent="0"  />
+	
+	<!-- Controls - Hi-hat -->
+	
+	<StaticText x="246" y="84" w="80" h="20" text="VOLUME" color_text="#E3D481FF" transparent="1"  />
+	
+	<Knob param="102" x="272" y="96" image="Perc_stumpy.png" frames="81"  />
+
+
+	<StaticText x=259" y="170" w="50" h="18" text="Pedal" color_text="#DFDF99FF" transparent="1"   />
+
+	<OptionMenu    param="4"  x="255"  y="190"  w="60" h="18"  font_size="Small" alignment="center" color_text="#DFDF99FF" transparent="0"  >	
+		<OptionItem name="Closed"		    value="0.125" />
+		<OptionItem name="Loose"		    value="0.375" />
+		<OptionItem name="Half"			    value="0.625" />
+		<OptionItem name="Open"			    value="0.875" />	
+	</OptionMenu>
+
+
+	<!-- Controls - All -->
+	
+	<StaticText x="451" y="84" w="80" h="20" text="FIDELITY" color_text="#E3D481FF" transparent="1"  />
+
+	<Knob param="110" x="472" y="96" image="Perc_stumpy.png" frames="81"  />
+
+
+	<StaticText x="464" y="170" w="50" h="18" text="Extra Mics" color_text="#E3D481FF" transparent="1"   />
+
+
+
+	<Knob param="105" x="474" y="190" image="Perc_knob.png" frames="128"  />
+
+
+	<StaticText x="464" y="226" w="50" h="18" text="Tuning" color_text="#E3D481FF" transparent="1"   />
+	
+	<Knob param="108" x="474" y="246" image="Perc_knob.png" frames="128"  />
+
+
+
+
+
+
+
+
+
+
+
+</GUI>                                                                                                                                       
