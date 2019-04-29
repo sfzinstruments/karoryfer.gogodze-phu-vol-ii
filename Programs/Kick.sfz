@@ -1,0 +1,98 @@
+<control>
+label_cc100=Kick vol
+label_cc105=Mic mix
+label_cc108=Tuning
+label_cc110=Fi
+label_cc111=Kick dirt
+
+set_cc100=100
+set_cc105=80
+set_cc108=63
+set_cc110=63
+set_cc111=127
+
+<global>
+loop_mode=one_shot
+seq_length=4
+pitch_keytrack=0
+tune=-1200
+tune_cc108=2400
+off_mode=normal
+delay_curvecc110=10
+offset_curvecc110=11
+
+//Kick section
+
+<master>
+amplitude_cc100=100
+offset_cc110=65
+#include "mappings/kick_kick_mic.sfz"
+
+<master>
+amplitude_cc100=60
+amplitude_cc111=100
+#include "mappings/kick_snare_mic.sfz"
+
+<master>
+amplitude_cc100=60
+amplitude_cc111=100
+offset_cc110=154
+delay_oncc110=0.0048
+pan=100
+#include "mappings/kick_oh_mic.sfz"
+
+<master>
+amplitude_cc100=60
+amplitude_cc111=100
+offset_cc110=109
+delay_oncc110=0.0048
+pan=-100
+#include "mappings/kick_side_mic.sfz"
+
+<master>
+amplitude_cc100=60
+amplitude_cc111=100
+offset_cc110=180
+delay_oncc110=0.0093
+locc105=64
+#include "mappings/kick_front_mic.sfz"
+
+<master>
+amplitude_cc100=60
+amplitude_cc111=100
+offset_cc110=175
+delay_oncc110=0.02
+locc105=96
+#include "mappings/kick_wndw_mic.sfz"
+
+<master>
+amplitude_cc100=60
+amplitude_cc111=100
+offset=66
+offset_cc110=177
+offset_curvecc110=13
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/kick_retro_mic.sfz"
+
+<curve>
+//Mic delay curve
+curve_index=10
+v000=1
+v060=0
+v127=0
+
+//Offset align curve for most mics
+<curve>
+curve_index=11
+v000=0
+v067=0
+v127=1
+
+//Offset align curve for retro mic - across the whole range
+<curve>
+curve_index=13
+v000=0
+v063=0.3
+v127=1

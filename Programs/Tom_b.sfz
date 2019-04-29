@@ -1,0 +1,120 @@
+<control>
+label_cc103=Tom vol
+label_cc105=Extra mics
+label_cc108=Tuning
+label_cc110=Fi
+
+set_cc103=100
+set_cc105=0
+set_cc108=63
+set_cc110=63
+
+<global>
+loop_mode=one_shot
+seq_length=4
+pitch_keytrack=0
+tune=-1200
+tune_cc108=2400
+delay_curvecc110=10
+offset_curvecc110=11
+
+
+//Low tom section
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0093
+delay_curvecc110=14
+amplitude_cc105=100
+#include "mappings/toml_oh_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/toml_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset=239
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=3000
+#include "mappings/toml_retro_mic.sfz"
+
+//Mid tom section
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0093
+delay_curvecc110=14
+amplitude_cc105=100
+#include "mappings/tomm_oh_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/tomm_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset=239
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=3300
+#include "mappings/tomm_retro_mic.sfz"
+
+//High tom section
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0093
+delay_curvecc110=14
+amplitude_cc105=100
+#include "mappings/tomh_oh_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/tomh_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset=239
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4000
+#include "mappings/tomh_retro_mic.sfz"
+
+<curve>
+//Mic delay curve
+curve_index=10
+v000=1
+v060=0
+v127=0
+
+//Offset align curve for most mics
+<curve>
+curve_index=11
+v000=0
+v067=0
+v127=1
+
+//Offset align curve across the whole range
+<curve>
+curve_index=13
+v000=0
+v063=0.3
+v127=1
+
+//Delay curve for tom mics
+<curve>
+curve_index=14
+v000=1
+v064=0.2
+v127=0

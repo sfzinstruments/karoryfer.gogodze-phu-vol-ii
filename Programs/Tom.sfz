@@ -1,0 +1,391 @@
+<control>
+label_cc103=Tom vol
+label_cc105=Mic mix
+label_cc108=Tuning
+label_cc110=Fi
+label_cc114=Tom thud
+
+
+set_cc103=100
+set_cc105=80
+set_cc108=63
+set_cc110=63
+
+<global>
+loop_mode=one_shot
+seq_length=4
+pitch_keytrack=0
+tune=-1200
+tune_cc108=2400
+off_mode=normal
+delay_curvecc110=10
+offset_curvecc110=11
+
+//Low tom section
+
+<master>
+amplitude_cc103=100
+offset_cc110=91
+#include "mappings/toml_kick_mic.sfz"
+
+<master>
+amplitude_cc103=100
+offset_cc110=49
+#include "mappings/toml_snare_mic.sfz"
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=100
+#include "mappings/toml_oh_mic.sfz"
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=-100
+#include "mappings/toml_side_mic.sfz"
+
+<master>
+amplitude_cc103=100
+offset_cc110=237
+delay_oncc110=0.0093
+locc105=64
+#include "mappings/toml_front_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+locc105=96
+#include "mappings/toml_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=239
+offset_curvecc110=13
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/toml_retro_mic.sfz"
+
+//Mid tom section
+
+<master>
+amplitude_cc103=100
+offset_cc110=91
+#include "mappings/tomm_kick_mic.sfz"
+
+<master>
+amplitude_cc103=100
+offset_cc110=49
+#include "mappings/tomm_snare_mic.sfz"
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=100
+#include "mappings/tomm_oh_mic.sfz"
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=-100
+#include "mappings/tomm_side_mic.sfz"
+
+<master>
+amplitude_cc103=100
+offset_cc110=237
+delay_oncc110=0.0093
+locc105=64
+#include "mappings/tomm_front_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+locc105=96
+#include "mappings/tomm_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=239
+offset_curvecc110=13
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/tomm_retro_mic.sfz"
+
+
+//High tom section
+
+<master>
+amplitude_cc103=100
+offset_cc110=91
+#include "mappings/tomh_kick_mic.sfz"
+
+<master>
+amplitude_cc103=100
+offset_cc110=49
+#include "mappings/tomh_snare_mic.sfz"
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=100
+#include "mappings/tomh_oh_mic.sfz"
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=-100
+#include "mappings/tomh_side_mic.sfz"
+
+<master>
+amplitude_cc103=100
+offset_cc110=237
+delay_oncc110=0.0093
+locc105=64
+#include "mappings/tomh_front_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+locc105=96
+#include "mappings/tomh_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=239
+offset_curvecc110=13
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/tomh_retro_mic.sfz"
+
+//Low tom section - transposed
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=91
+#include "mappings/toml_kick_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=49
+#include "mappings/toml_snare_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=100
+#include "mappings/toml_oh_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=-100
+#include "mappings/toml_side_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=237
+delay_oncc110=0.0093
+locc105=64
+#include "mappings/toml_front_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+locc105=96
+#include "mappings/toml_wndw_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=60
+offset_cc110=239
+offset_curvecc110=13
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/toml_retro_mic.sfz"
+
+//Mid tom section - transposed
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=91
+#include "mappings/tomm_kick_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=49
+#include "mappings/tomm_snare_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=100
+#include "mappings/tomm_oh_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=-100
+#include "mappings/tomm_side_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=237
+delay_oncc110=0.0093
+locc105=64
+#include "mappings/tomm_front_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+locc105=96
+#include "mappings/tomm_wndw_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=60
+offset_cc110=239
+offset_curvecc110=13
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/tomm_retro_mic.sfz"
+
+
+//High tom section - transposed
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=91
+#include "mappings/tomh_kick_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=49
+#include "mappings/tomh_snare_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=100
+#include "mappings/tomh_oh_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+delay_oncc110=0.0048
+pan=-100
+#include "mappings/tomh_side_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=100
+offset_cc110=237
+delay_oncc110=0.0093
+locc105=64
+#include "mappings/tomh_front_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+locc105=96
+#include "mappings/tomh_wndw_mic.sfz"
+
+<master>
+amplitude_cc114=44
+locc114=1
+transpose=-12
+amplitude_cc103=60
+offset_cc110=239
+offset_curvecc110=13
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/tomh_retro_mic.sfz"
+
+
+<curve>
+//Mic delay curve
+curve_index=10
+v000=1
+v060=0
+v127=0
+
+//Offset align curve for most mics
+<curve>
+curve_index=11
+v000=0
+v067=0
+v127=1
+
+//Offset align curve for retro mic - across the whole range
+<curve>
+curve_index=13
+v000=0
+v063=0.3
+v127=1

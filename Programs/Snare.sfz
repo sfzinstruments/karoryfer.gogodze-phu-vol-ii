@@ -1,0 +1,97 @@
+<control>
+label_cc101=Snare vol
+label_cc105=Mic mix
+label_cc108=Tuning
+label_cc110=Fi
+label_cc112=Snare fat
+
+set_cc101=100
+set_cc105=80
+set_cc108=63
+set_cc110=63
+
+<global>
+loop_mode=one_shot
+seq_length=4
+pitch_keytrack=0
+tune=-1200
+tune_cc108=2400
+off_mode=normal
+delay_curvecc110=10
+offset_curvecc110=11
+
+
+//Snare section
+
+<master>
+amplitude_cc101=100
+offset_cc110=93
+tune_cc112=-200
+#include "mappings/snare_kick_mic.sfz"
+
+<master>
+amplitude_cc101=100
+#include "mappings/snare_snare_mic.sfz"
+
+<master>
+amplitude_cc101=100
+pan=100
+offset_cc110=87
+delay_oncc110=0.0048
+tune_cc112=111
+#include "mappings/snare_oh_mic.sfz"
+
+<master>
+amplitude_cc101=100
+pan=-100
+offset_cc110=87
+delay_oncc110=0.0048
+tune_cc112=-134
+#include "mappings/snare_side_mic.sfz"
+
+<master>
+amplitude_cc101=100
+offset_cc110=239
+delay_oncc110=0.0093
+tune_cc112=-83
+locc105=64
+#include "mappings/snare_front_mic.sfz"
+
+<master>
+amplitude_cc101=100
+offset_cc110=238
+delay_oncc110=0.02
+tune_cc112=-165
+locc105=96
+#include "mappings/snare_wndw_mic.sfz"
+
+<master>
+amplitude_cc101=100
+offset_cc110=240
+offset_curvecc110=13
+tune_cc112=-54
+locc105=96
+fil_type=hpf_2p
+cutoff=150
+#include "mappings/snare_retro_mic.sfz"
+
+<curve>
+//Mic delay curve
+curve_index=10
+v000=1
+v060=0
+v127=0
+
+//Offset align curve for most mics
+<curve>
+curve_index=11
+v000=0
+v067=0
+v127=1
+
+//Offset align curve for retro mic - across the whole range
+<curve>
+curve_index=13
+v000=0
+v063=0.3
+v127=1

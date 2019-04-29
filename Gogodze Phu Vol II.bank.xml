@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Key>7C9B8ECF0400590BF6C9F846531F6D25E8117A124198A749EC145DB902EBE727A742CDB126EBE06C6AE185AD7D7D2FBC3CADE2F25398229D389D9B700FF88AD6811C60F0B037DA4D0055ECA12C73153E517072615C19F5280790505A6AFB923A04F3CB766A244FFC4D9EE36A4ABD1648ECB773CC0B32B65812226B402B1EACF3F74B3F252956E4FAC3A07380EFE9B44FC7E1F3E44B528642D1B88227DB3FF3A4EEE2AFD3A907DF1148076B1FCA89C0D43FB69A2E3CC7F048332DBAE22CF460434232FABE8EFB1073744882D367A6875F69B211A49E7FBF94FA7C57DE91447ED52D689E7EB0DE8BFF72D2E13F2B2B8487B5E79D1BC9275BB3C86F83C2CE42BF33</Key>
+<AriaBank id="2519" name="Gogodze Phu Vol II" vendor="Karoryfer" product="Gogodze Phu Vol II" version="1000" >
+
+	<Define name="$sample_dir" value="../Samples"/>
+
+	<!-- branding for Aria Player and sforzando UIs -->
+	<AriaGUI path="GUI/aria_info.xml"  target="*ARIA_INFO" />	
+
+	<AriaProgram  name="01 - Kit 47 mix"        gui="GUI/Kit.xml">      <AriaElement  path="Programs/Kit.sfz"/>     </AriaProgram>
+	<AriaProgram  name="02 - Kick 47 mix"     	gui="GUI/Kick.xml" >    <AriaElement  path="Programs/Kick.sfz"/>    </AriaProgram>  
+	<AriaProgram  name="03 - Snare 47 mix"     	gui="GUI/Snare.xml" >   <AriaElement  path="Programs/Snare.sfz"/>	</AriaProgram>               
+    <AriaProgram  name="04 - Hi-hat 47 mix"     gui="GUI/Hat.xml" >     <AriaElement  path="Programs/Hat.sfz"/>		</AriaProgram>  
+	<AriaProgram  name="05 - Toms 47 mix"     	gui="GUI/Tom.xml" >     <AriaElement  path="Programs/Tom.sfz"/>		</AriaProgram>  
+	<AriaProgram  name="06 - Kit 13 mix"        gui="GUI/Kit_b.xml">    <AriaElement  path="Programs/Kit_b.sfz"/>   </AriaProgram>
+	<AriaProgram  name="07 - Kick 13 mix"     	gui="GUI/Kick_b.xml" >  <AriaElement  path="Programs/Kick_b.sfz"/>	</AriaProgram>  
+	<AriaProgram  name="08 - Snare 13 mix"     	gui="GUI/Snare_b.xml" > <AriaElement  path="Programs/Snare_b.sfz"/>	</AriaProgram>              
+	<AriaProgram  name="09 - Hi-hat 13 mix"     gui="GUI/Hat_b.xml" >   <AriaElement  path="Programs/Hat_b.sfz"/>	</AriaProgram>  
+	<AriaProgram  name="10 - Toms 13 mix"     	gui="GUI/Tom_b.xml" >   <AriaElement  path="Programs/Tom_b.sfz"/>	</AriaProgram> 
+
+</AriaBank>

@@ -1,0 +1,387 @@
+<control>
+label_cc4=Hi-hat position
+label_cc100=Kick vol
+label_cc101=Snare vol
+label_cc102=Hi-hat vol
+label_cc103=Tom vol
+label_cc105=Extra mics
+label_cc108=Tuning
+label_cc110=Fi
+
+set_cc100=80
+set_cc101=100
+set_cc102=100
+set_cc103=100
+set_cc105=0
+set_cc108=63
+set_cc110=63
+
+<global>
+loop_mode=one_shot
+seq_length=4
+pitch_keytrack=0
+tune=-1200
+tune_cc108=2400
+off_mode=normal
+//Release time for hi-hat mutes
+ampeg_release=0.07
+delay_curvecc110=10
+offset_curvecc110=11
+
+//Kick section
+
+<master>
+amplitude_cc100=60
+offset_cc110=154
+delay_oncc110=0.0093
+amplitude_cc105=100
+#include "mappings/kick_oh_mic.sfz"
+
+<master>
+amplitude_cc100=60
+offset_cc110=175
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/kick_wndw_mic.sfz"
+
+<master>
+amplitude_cc100=100
+offset=243
+#include "mappings/kick_retro_mic.sfz"
+
+//Snare section
+
+<master>
+amplitude_cc101=100
+offset_cc110=87
+delay_oncc110=0.0093
+amplitude_cc105=100
+#include "mappings/snare_oh_mic.sfz"
+
+<master>
+amplitude_cc101=100
+offset_cc110=238
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/snare_wndw_mic.sfz"
+
+<master>
+amplitude_cc101=100
+offset=240
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4000
+#include "mappings/snare_retro_mic.sfz"
+
+//Low tom section
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0093
+delay_curvecc110=14
+amplitude_cc105=100
+#include "mappings/toml_oh_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/toml_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset=239
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=3000
+#include "mappings/toml_retro_mic.sfz"
+
+//Mid tom section
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0093
+delay_curvecc110=14
+amplitude_cc105=100
+#include "mappings/tomm_oh_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/tomm_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset=239
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=3300
+#include "mappings/tomm_retro_mic.sfz"
+
+//High tom section
+
+<master>
+amplitude_cc103=100
+delay_oncc110=0.0093
+delay_curvecc110=14
+amplitude_cc105=100
+#include "mappings/tomh_oh_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset_cc110=237
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/tomh_wndw_mic.sfz"
+
+<master>
+amplitude_cc103=60
+offset=239
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4000
+#include "mappings/tomh_retro_mic.sfz"
+
+//Hi-hat - foot chiks
+//Not in mute groups because nothing mutes them
+
+<master>
+amplitude_cc102=100
+offset_cc110=60
+delay_oncc110=0.0093
+amplitude_cc105=100
+#include "mappings/hf_oh_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset_cc110=233
+delay_oncc110=0.02
+amplitude_cc105=100
+#include "mappings/hf_wndw_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset=233
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4800
+#include "mappings/hf_retro_mic.sfz"
+
+//Hi-hat - tight
+
+<master>
+amplitude_cc102=100
+offset_cc110=60
+delay_oncc110=0.0093
+polyphony=4
+group=34
+off_by=35
+amplitude_cc105=100
+#include "mappings/ht_oh_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset_cc110=233
+delay_oncc110=0.02
+polyphony=4
+group=74
+off_by=75
+amplitude_cc105=100
+#include "mappings/ht_wndw_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset=233
+polyphony=4
+group=44
+off_by=45
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4800
+#include "mappings/ht_retro_mic.sfz"
+
+//Hi-hat - closed
+
+<master>
+amplitude_cc102=100
+offset_cc110=60
+delay_oncc110=0.0093
+hicc4=31
+polyphony=4
+group=33
+off_by=34
+amplitude_cc105=100
+#include "mappings/hc_oh_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset_cc110=233
+delay_oncc110=0.02
+hicc4=31
+polyphony=4
+group=73
+off_by=74
+amplitude_cc105=100
+#include "mappings/hc_wndw_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset=233
+hicc4=31
+polyphony=4
+group=43
+off_by=44
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4800
+#include "mappings/hc_retro_mic.sfz"
+
+//Hi-hat - loosely closed
+
+<master>
+amplitude_cc102=100
+offset_cc110=60
+delay_oncc110=0.0093
+locc4=32 hicc4=63
+polyphony=4
+group=32
+off_by=33
+amplitude_cc105=100
+#include "mappings/hl_oh_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset_cc110=233
+delay_oncc110=0.02
+locc4=32 hicc4=63
+polyphony=4
+group=72
+off_by=73
+amplitude_cc105=100
+#include "mappings/hl_wndw_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset=233
+locc4=32 hicc4=63
+polyphony=4
+group=42
+off_by=43
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4800
+#include "mappings/hl_retro_mic.sfz"
+
+//Hi-hat - half open
+
+<master>
+amplitude_cc102=100
+offset_cc110=60
+delay_oncc110=0.0093
+locc4=64 hicc4=95
+polyphony=4
+group=31
+off_by=32
+amplitude_cc105=100
+#include "mappings/hh_oh_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset_cc110=233
+delay_oncc110=0.02
+locc4=64 hicc4=95
+polyphony=4
+group=71
+off_by=72
+amplitude_cc105=100
+#include "mappings/hh_wndw_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset=233
+locc4=64 hicc4=95
+polyphony=4
+group=41
+off_by=42
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4800
+#include "mappings/hh_retro_mic.sfz"
+
+//Hi-hat - open
+
+<master>
+amplitude_cc102=100
+offset_cc110=60
+delay_oncc110=0.0093
+locc4=96
+seq_length=3
+polyphony=5
+group=37
+off_by=31
+amplitude_cc105=100
+#include "mappings/ho_oh_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset_cc110=233
+delay_oncc110=0.02
+locc4=96
+seq_length=3
+polyphony=5
+group=77
+off_by=71
+amplitude_cc105=100
+#include "mappings/ho_wndw_mic.sfz"
+
+<master>
+amplitude_cc102=100
+offset=233
+locc4=96
+seq_length=3
+polyphony=5
+group=47
+off_by=41
+fil_type=hpf_2p
+cutoff=30
+cutoff_oncc110=4800
+#include "mappings/ho_retro_mic.sfz"
+
+//Hat mute silence groups
+<master>
+seq_length=1
+#include "mappings/hmute_oh_mic.sfz"
+#include "mappings/hmute_retro_mic.sfz"
+#include "mappings/hmute_snare_mic.sfz"
+#include "mappings/hmute_wndw_mic.sfz"
+
+<curve>
+//Mic delay curve
+curve_index=10
+v000=1
+v060=0
+v127=0
+
+//Offset align curve for most mics
+<curve>
+curve_index=11
+v000=0
+v067=0
+v127=1
+
+//Offset align curve across the whole range
+<curve>
+curve_index=13
+v000=0
+v063=0.3
+v127=1
+
+//Delay curve for tom mics
+<curve>
+curve_index=14
+v000=1
+v064=0.2
+v127=0
